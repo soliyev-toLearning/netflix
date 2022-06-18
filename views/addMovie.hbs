@@ -4,10 +4,10 @@
     <div class="container">
         <div class="form">
             <h1 class="prm" style="text-align: center; color: #fff; text-transform: uppercase; padding-top: 30px; margin-bottom: 50px; font-size: 30px;">добавить фильм</h1>
-            <form action="">
-            <input class="pni" placeholder="Название фильма" type="text">
-            <input class="pni" placeholder="Дата фильма" type="number">
-            <input class="pni" placeholder="Цена фильма" type="price">
+            <form action="/add/movie/add" method="post">
+            <input class="pni" placeholder="Название фильма" type="text"  name="name">
+            <input class="pni" placeholder="Цена фильма" type="price" name="price">
+            <input class="pni" type="text" placeholder="Изображения фильма" name="img">
             <input class="btn-submit" placeholder="Цена фильма" type="submit">
         </form>
         </div>

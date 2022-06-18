@@ -44,17 +44,17 @@
           </ul>
         </div>
 
-          <ul class="navbar">
-            <li><a href="#!">Вакансии</a></li>
-            <li><a href="#!">Реклама</a></li>
-            <li><a href="#!">Соглашение</a></li>
-            <li><a href="#!">Справка</a></li>
-            <li><a href="#!">Блог</a></li>
-            <li><a href="#!">Участие в исследованиях</a></li>
-            <li><a href="#!">Предложения</a></li>
-            <li><a href="#!">Служба поддержки</a></li>
-          </ul>
-        </div>
+        <ul class="navbar">
+          <li><a href="#!">Вакансии</a></li>
+          <li><a href="#!">Реклама</a></li>
+          <li><a href="#!">Соглашение</a></li>
+          <li><a href="#!">Справка</a></li>
+          <li><a href="#!">Блог</a></li>
+          <li><a href="#!">Участие в исследованиях</a></li>
+          <li><a href="#!">Предложения</a></li>
+          <li><a href="#!">Служба поддержки</a></li>
+        </ul>
+      </div>
 
     </footer>
   </div>
@@ -64,7 +64,13 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"
 ></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", { slidesPerView: 3, spaceBetween: 30,
+  pagination: { el: ".swiper-pagination", clickable: true, }, });
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="/script/script.js"></script>

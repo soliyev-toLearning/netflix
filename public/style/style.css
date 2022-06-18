@@ -194,8 +194,11 @@ ul li a:hover {
 }
 
 .cards {
+  width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .prm {
@@ -227,7 +230,7 @@ ul li a:hover {
 .line {
   height: 1px;
   background: rgb(234, 0, 0);
-  width: 1890px;
+  /* width: 1890px; */
   transform: translateY(70px);
   margin-bottom: 40px;
 }
@@ -385,4 +388,42 @@ form {
 }
 .bodyContent {
   height: 68vh;
+}
+.plus{
+  cursor: pointer;
+  color: #c1c1c1;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 72px;
+  font-size: 72px;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 240px !important;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
 }

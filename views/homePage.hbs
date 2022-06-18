@@ -1,7 +1,7 @@
 <div class="container">
   <header>
 
-    <div class="hero">
+      <div class="hero">
       <div data-aos="zoom-in-up">
 
         <h1 class="title"><span class="active">Фильмы</span>
@@ -37,26 +37,26 @@
     <h1 class="prm">премьеры</h1>
   </div>
 
-  <div class="container">
-    <div class="cards d-flex">
-      <div data-aos="zoom-in">
-
-        <div class="cart">
-          <div class="movie">
-            <img src="/images/thor.jpg" alt="" />
-          </div>
-          <div class="movie-info">
-            <h2>Thor:Love and Thunder</h2>
-            <div class="toCard">
-              <span>08.07.2022</span>
-              <p>20.00$</p>
+  <div class="container" >
+    <div class="cards d-flex" style="width: 1150px;">
+      {{#each movie}}
+        <div data-aos="zoom-in">
+          <div class="cart">
+            <div class="movie">
+              <img src="{{img}}" alt="" />
             </div>
-            <button class="buy">BUY</button>
-
+            <div class="movie-info">
+              <h2>{{name}}</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>{{price}}$</p>
+              </div>
+              <button class="buy">BUY</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div data-aos="zoom-in">
+      {{/each}}
+      {{!-- <div data-aos="zoom-in">
 
         <div class="cart">
           <div class="movie">
@@ -124,8 +124,7 @@
           </div>
         </div>
       </div>
-
-    </div>
+    </div> --}}
 
   </div>
   {{! === }}
@@ -429,7 +428,7 @@
       /></h1>
   </div>
 
-  <div class="container" style="padding-bottom: 150px;">    
+  <div class="container" style="padding-bottom:   50px;">
     <div class="cards d-flex">
       <div data-aos="zoom-in-up">
 
@@ -529,4 +528,156 @@
     </div>
 
   </div>
+
+  {{!-- <div data-aos="fade-up">
+    <h1 class="prm">Фильмы, которые я создал
+      <img
+        width="100px"
+        style="position: absolute; margin-left: -30px;"
+        src="/images/free-rectangle-stamp-4.png"
+        alt=""
+      /></h1>
+  </div> --}}
+    {{!-- <div class="container" style="padding-bottom: 150px;">
+      <div class="cards d-flex">
+        <div class="blur"></div>
+        <div data-aos="zoom-in-up">
+
+          <div class="cart">
+            <div class="movie">
+              <img
+                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt=""
+              /> <h1 class="plus">+</h1>
+            </div>
+            <div class="movie-info">
+              <h2>Thor:Love and Thunder</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>00.00$</p>
+              </div>
+              <button class="buy">BUY</button>
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up">
+          <div class="cart">
+            <div class="movie">
+              <img
+                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt=""
+              /> <h1 class="plus">+</h1>
+            </div>
+            <div class="movie-info">
+              <h2>Spiderman: Multiverse 2</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>00.00$</p>
+              </div>
+              <button class="buy">BUY</button>
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up">
+          <div class="cart">
+            <div class="movie">
+              <img
+                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt=""
+              /> <h1 class="plus">+</h1>
+            </div>
+            <div class="movie-info">
+              <h2>Squid Game : Season 2</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>00.00$</p>
+              </div>
+              <button class="buy">BUY</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div data-aos="zoom-in-up">
+          <div class="cart">
+            <div class="movie">
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg" alt="" /> <h1 class="plus">+</h1>
+            </div>
+            <div class="movie-info">
+              <h2>Anime : Your name</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>00.00$</p>
+              </div>
+              <button class="buy">BUY</button>
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up">
+          <div class="cart">
+            <div class="movie">
+              <img
+                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt=""
+              /> <h1 class="plus">+</h1>
+            </div>
+            <div class="movie-info">
+              <h2>Deadpool 3:I'm Avenger</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>00.00$</p>
+              </div>
+              <button class="buy">BUY</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div> --}}
 </div>
+
+<div data-aos="fade-up">
+    <h1 class="prm">премьеры</h1>
+  </div>
+
+  <div class="container">
+    <div class="cards d-flex" style="width: 1300px;" >
+      
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        {{#each movie}}
+        <div class="swiper-slide">
+          <div data-aos="zoom-in">
+          <div class="cart">
+            <div class="movie">
+              <img src="{{img}}" alt="" />
+            </div>
+            <div class="movie-info">
+              <h2>{{name}}</h2>
+              <div class="toCard">
+                <span>08.07.2022</span>
+                <p>{{price}}$</p>
+              </div>
+              <button class="buy">BUY</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+     
+    </script>
