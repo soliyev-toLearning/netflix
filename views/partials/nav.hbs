@@ -1,0 +1,46 @@
+<div data-aos="fade-down">
+  <div class="container">
+    <nav>
+      <a href="/"><img
+          width="150px"
+          src="https://images.stopgame.ru/blogs/2019/01/04/ENk8du4j.jpg"
+          alt=""
+        /></a>
+      <ul class="ul">
+        <li><a href="/">HOME</a></li>
+        <li class="clicker"><a href="#!">CATEGORIES</a>
+          <ul class="category">
+            <a href="#!">ACTION</a>
+            <a href="#!">DRAMA</a>
+            <a href="#!">CARTOONS / ANIME</a>
+            <a href="#!">HORROR</a>
+            <a href="#!">ROMANTICE</a>
+            <a href="#!">FANTASY</a>
+            <a href="#!">COMEDY</a>
+          </ul>
+        </li>
+        <li><a href="/add/movie">ADD MOVIE +</a></li>
+        <li><a href="/shopping/card">SHOPPING CARD</a></li>
+      </ul>
+      <div class="account">
+        <a href="/signin" class="log">ВОЙТИ</a>
+        <a href="/signup" class="log">РЕГИСТРАТСИЯ</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<script>
+  const clicker = document.querySelector('.clicker') 
+  const category = document.querySelector('.category')
+
+  clicker.addEventListener('click', ()=>{
+    
+    if(category.style.opacity == 1){
+        category.style.opacity = 0
+    }else{
+        category.style.opacity = 1
+    }
+  })
+  
+</script>

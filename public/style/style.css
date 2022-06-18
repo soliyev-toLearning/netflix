@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+body {
+  background-image: url(../images/UZ-ru-20220613-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  box-shadow: -80px 90px 100px #000 inset;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 20px;
+}
+.category {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  transform: translateX(-88px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.category a::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+
+/* .clicker:hover .category {
+  opacity: 1;
+} */
+.account {
+  display: flex;
+}
+ul li a {
+  color: #fff;
+}
+.ul li:after {
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+.account a::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+.ul li:hover::after {
+  content: "";
+  display: block;
+  opacity: 1;
+}
+.account a:hover::after {
+  content: "";
+  display: block;
+  opacity: 1;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+.log:hover {
+  color: #fff;
+}
+
+.log {
+  margin-left: 30px;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  color: #fff;
+  margin-top: 150px;
+}
+.category a:hover .clicker::after{
+  content: "";
+  opacity: 0;
+}
+.title {
+  width: 800px;
+  margin: auto;
+  font-size: 82px;
+  margin-bottom: 20px;
+}
+
+.active {
+  color: rgb(234, 0, 0);
+}
+
+.little-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.bitle-title {
+  font-size: 30px;
+}
+
+.gmail {
+  margin-top: 30px;
+}
+
+.inp {
+  width: 500px;
+  border: none;
+  padding: 15px 40px;
+  color: gray;
+}
+
+.sub {
+  width: 200px;
+  background: rgb(234, 0, 0);
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  transform: translateX(-5px);
+}
+
+.inp::placeholder {
+  letter-spacing: 2px;
+}
+
+:focus {
+  outline: none;
+}
+
+.movie img {
+  width: 200px;
+  height: 300px;
+}
+
+.movie-info {
+  color: #fff;
+  width: 200px !important;
+}
+
+.movie-info h2 {
+  width: 200px !important;
+  font-size: 26px;
+}
+
+.movie-info span {
+  color: rgb(234, 0, 0);
+}
+
+.toCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy {
+  width: 100%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prm {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.prm::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: auto;
+  background: #fff;
+}
+
+.prm::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: auto;
+  background: #fff;
+}
+
+.line {
+  height: 1px;
+  background: rgb(234, 0, 0);
+  width: 1890px;
+  transform: translateY(70px);
+  margin-bottom: 40px;
+}
+
+.sot-set {
+  width: 700px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  transform: translateX(30px);
+  padding-top: 40px;
+}
+
+.sot-set a {
+  filter: saturate(0);
+  transition: 0.3s;
+}
+
+.sot-set a:hover {
+  filter: saturate(1);
+}
+
+.sot-set a:hover .paragraph {
+  opacity: 1;
+}
+
+.paragraph {
+  margin-bottom: -26px;
+  margin-left: 30px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.navbar {
+  padding-bottom: 30px;
+}
+
+.on-market {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heightContent {
+  height: 78.3vh;
+}
+
+.form {
+  width: 900px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+}
+
+.form .pni {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding-left: 35px;
+  padding: 15px 35px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.form .pnii {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 25px;
+  width: 75px;
+  height: 55px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  transform: translateX(30px);
+  margin-right: 30px;
+}
+
+.pni::placeholder {
+  color: #fff;
+}
+
+.btn-submit {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 120px;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+.btn-submit-s {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 120px;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+.btn-submit-acc {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+}
+.th {
+  color: #fff;
+  text-transform: uppercase;
+}
+.td {
+  color: #fff;
+}
+.btn-del {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+}
+.total {
+  color: #fff;
+}
+
+.mpt {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.spancha {
+  background: #6800ca;
+  border-radius: 50%;
+  padding: 1px 8px;
+  width: 3px;
+  height: 3px;
+  color: #fff;
+}
+.prohibition {
+  margin-left: 525px;
+}
+.bodyContent {
+  height: 68vh;
+}
