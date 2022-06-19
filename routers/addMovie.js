@@ -12,8 +12,8 @@ router.post("/add", async (req, res) => {
     img: req.body.img,
   });
 
-  await movie.save()
-  res.redirect('/')
+  await movie.save();
+  res.redirect("/");
 });
 
 module.exports = router;

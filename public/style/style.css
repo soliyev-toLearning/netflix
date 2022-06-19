@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -104,13 +104,16 @@ ul li a:hover {
   margin-left: 30px;
   color: #fff;
 }
+.gmail .inp {
+  letter-spacing: 2px;
+}
 
 .hero {
   text-align: center;
   color: #fff;
   margin-top: 150px;
 }
-.category a:hover .clicker::after{
+.category a:hover .clicker::after {
   content: "";
   opacity: 0;
 }
@@ -277,7 +280,7 @@ ul li a:hover {
 }
 
 .heightContent {
-  height: 78.3vh;
+  height: 78.2vh;
 }
 
 .form {
@@ -389,7 +392,7 @@ form {
 .bodyContent {
   height: 68vh;
 }
-.plus{
+.plus {
   cursor: pointer;
   color: #c1c1c1;
   position: absolute;
@@ -397,7 +400,6 @@ form {
   margin-left: 72px;
   font-size: 72px;
 }
-
 
 .swiper {
   width: 100%;
@@ -426,4 +428,30 @@ form {
   width: 200px;
   height: 300px;
   object-fit: cover;
+}
+
+.movie-info h2 {
+  height: 60px;
+}
+.swiper-pagination-bullet {
+  background: #fff;
+  margin-bottom: 1000px;
+}
+.swiper-wrapper {
+  height: 555px;
+}
+
+.cicle {
+  background: #0f0f0f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 25px;
+  transform: translateY(230px);
+}
+.cicle a {
+  color: red;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-27.3px);
 }

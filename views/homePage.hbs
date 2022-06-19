@@ -1,7 +1,7 @@
 <div class="container">
   <header>
 
-      <div class="hero">
+    <div class="hero">
       <div data-aos="zoom-in-up">
 
         <h1 class="title"><span class="active">Фильмы</span>
@@ -37,26 +37,24 @@
     <h1 class="prm">премьеры</h1>
   </div>
 
-  <div class="container" >
+  <div class="container">
     <div class="cards d-flex" style="width: 1150px;">
-      {{#each movie}}
-        <div data-aos="zoom-in">
-          <div class="cart">
-            <div class="movie">
-              <img src="{{img}}" alt="" />
+      <div data-aos="zoom-in">
+        <div class="cart">
+          <div class="movie">
+            <img src="/images/thor.jpg" alt="" />
+          </div>
+          <div class="movie-info">
+            <h2>Thor:Love and Thunder</h2>
+            <div class="toCard">
+              <span>08.07.2022</span>
+              <p>20.00$</p>
             </div>
-            <div class="movie-info">
-              <h2>{{name}}</h2>
-              <div class="toCard">
-                <span>08.07.2022</span>
-                <p>{{price}}$</p>
-              </div>
-              <button class="buy">BUY</button>
-            </div>
+            <button class="buy">BUY</button>
           </div>
         </div>
-      {{/each}}
-      {{!-- <div data-aos="zoom-in">
+      </div>
+      <div data-aos="zoom-in">
 
         <div class="cart">
           <div class="movie">
@@ -124,11 +122,10 @@
           </div>
         </div>
       </div>
-    </div> --}}
+    </div>
 
   </div>
   {{! === }}
-
   <div data-aos="fade-up">
     <h1 class="prm">самый лучшие</h1>
   </div>
@@ -141,8 +138,7 @@
           <div class="movie">
             <img
               src="http://versia.co.il/wp-content/uploads/2020/02/Avengers-Endgame-%D7%A8%D7%95%D7%A1%D7%99%D7%AA-200x300.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div class="movie-info">
             <h2>Thor:Love and Thunder</h2>
@@ -346,10 +342,7 @@
       <div data-aos="fade-up-right">
         <div class="cart">
           <div class="movie">
-            <img
-              src="http://kinof.ru/uploads/posts/2021-12/1632818367.jpg"
-              alt=""
-            />
+            <img src="http://kinof.ru/uploads/posts/2021-12/1632818367.jpg" alt="" />
           </div>
           <div class="movie-info">
             <h2>Spiderman: Multiverse 2</h2>
@@ -420,12 +413,9 @@
   <div class="line"></div>
   <div data-aos="fade-up">
     <h1 class="prm">аниме
-      <img
-        width="100px"
-        style="position: absolute; margin-left: -30px;"
-        src="/images/free-rectangle-stamp-4.png"
-        alt=""
-      /></h1>
+      <img width="100px" style="position: absolute; margin-left: -30px;" src="/images/free-rectangle-stamp-4.png"
+        alt="" />
+    </h1>
   </div>
 
   <div class="container" style="padding-bottom:   50px;">
@@ -434,10 +424,7 @@
 
         <div class="cart">
           <div class="movie">
-            <img
-              src="https://images.prom.ua/1650046627_w640_h640_poster-plakat-tetrad.jpg"
-              alt=""
-            />
+            <img src="https://images.prom.ua/1650046627_w640_h640_poster-plakat-tetrad.jpg" alt="" />
           </div>
           <div class="movie-info">
             <h2>Thor:Love and Thunder</h2>
@@ -453,10 +440,7 @@
       <div data-aos="zoom-in-up">
         <div class="cart">
           <div class="movie">
-            <img
-              src="http://www.tinarou.org/articles/wp-content/uploads/2020/06/My-Hero-Academia-anime.jpg"
-              alt=""
-            />
+            <img src="http://www.tinarou.org/articles/wp-content/uploads/2020/06/My-Hero-Academia-anime.jpg" alt="" />
           </div>
           <div class="movie-info">
             <h2>Spiderman: Multiverse 2</h2>
@@ -472,10 +456,7 @@
       <div data-aos="zoom-in-up">
         <div class="cart">
           <div class="movie">
-            <img
-              src="https://lordserials.online/uploads/posts/2022-02/1644928109_610x900_7462.jpg"
-              alt=""
-            />
+            <img src="https://lordserials.online/uploads/posts/2022-02/1644928109_610x900_7462.jpg" alt="" />
           </div>
           <div class="movie-info">
             <h2>Squid Game : Season 2</h2>
@@ -508,10 +489,7 @@
       <div data-aos="zoom-in-up">
         <div class="cart">
           <div class="movie">
-            <img
-              src="https://ip1.anime-pictures.net/previews/44e/44e33cb506892115833eebdbec4dec46_cp.jpg"
-              alt=""
-            />
+            <img src="https://ip1.anime-pictures.net/previews/44e/44e33cb506892115833eebdbec4dec46_cp.jpg" alt="" />
           </div>
           <div class="movie-info">
             <h2>Deadpool 3:I'm Avenger</h2>
@@ -528,16 +506,55 @@
     </div>
 
   </div>
+  <div data-aos="fade-up">
+    <h1 class="prm">Фильмы, которые я ставлю <img width="100px" style="position: absolute; margin-left: -30px;"
+        src="/images/free-rectangle-stamp-4.png" alt="" /></h1>
+  </div>
 
-  {{!-- <div data-aos="fade-up">
-    <h1 class="prm">Фильмы, которые я создал
-      <img
-        width="100px"
-        style="position: absolute; margin-left: -30px;"
-        src="/images/free-rectangle-stamp-4.png"
-        alt=""
-      /></h1>
-  </div> --}}
+  <div class="container" style="margin-bottom: 50px;">
+    <div class="cards d-flex" style="width: 1300px;">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          {{#if movie.length}}
+          {{#each movie}}
+          <div class="swiper-slide">
+            <div data-aos="zoom-in">
+              <div class="cart">
+                <div class="movie">
+                  <img src="{{img}}" alt="" />
+                </div>
+                <div class="movie-info">
+                  <h2>{{name}}</h2>
+                  <div class="toCard">
+                    <span>08.07.2022</span>
+                    <p>{{price}}$</p>
+                  </div>
+                  <button class="buy">BUY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{/each}}
+          <div class="cicle">
+            <a href="/add/movie">
+              <h1>+</h1>
+            </a>
+          </div>
+          {{else}}
+          <p>asdasdasd</p>
+          {{/if}}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    {{!-- <div data-aos="fade-up">
+      <h1 class="prm">Фильмы, которые я создал
+        <img width="100px" style="position: absolute; margin-left: -30px;" src="/images/free-rectangle-stamp-4.png"
+          alt="" />
+      </h1>
+    </div> --}}
     {{!-- <div class="container" style="padding-bottom: 150px;">
       <div class="cards d-flex">
         <div class="blur"></div>
@@ -545,10 +562,9 @@
 
           <div class="cart">
             <div class="movie">
-              <img
-                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
-                alt=""
-              /> <h1 class="plus">+</h1>
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt="" />
+              <h1 class="plus">+</h1>
             </div>
             <div class="movie-info">
               <h2>Thor:Love and Thunder</h2>
@@ -564,10 +580,9 @@
         <div data-aos="zoom-in-up">
           <div class="cart">
             <div class="movie">
-              <img
-                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
-                alt=""
-              /> <h1 class="plus">+</h1>
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt="" />
+              <h1 class="plus">+</h1>
             </div>
             <div class="movie-info">
               <h2>Spiderman: Multiverse 2</h2>
@@ -583,10 +598,9 @@
         <div data-aos="zoom-in-up">
           <div class="cart">
             <div class="movie">
-              <img
-                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
-                alt=""
-              /> <h1 class="plus">+</h1>
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt="" />
+              <h1 class="plus">+</h1>
             </div>
             <div class="movie-info">
               <h2>Squid Game : Season 2</h2>
@@ -603,7 +617,9 @@
         <div data-aos="zoom-in-up">
           <div class="cart">
             <div class="movie">
-              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg" alt="" /> <h1 class="plus">+</h1>
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt="" />
+              <h1 class="plus">+</h1>
             </div>
             <div class="movie-info">
               <h2>Anime : Your name</h2>
@@ -619,10 +635,9 @@
         <div data-aos="zoom-in-up">
           <div class="cart">
             <div class="movie">
-              <img
-                src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
-                alt=""
-              /> <h1 class="plus">+</h1>
+              <img src="https://www.tarkettsee.com/media/img/M/THH_25121916_25131916_25126916_25136916_001.jpg"
+                alt="" />
+              <h1 class="plus">+</h1>
             </div>
             <div class="movie-info">
               <h2>Deadpool 3:I'm Avenger</h2>
@@ -639,45 +654,14 @@
       </div>
 
     </div> --}}
-</div>
-
-<div data-aos="fade-up">
-    <h1 class="prm">премьеры</h1>
-  </div>
-
-  <div class="container">
-    <div class="cards d-flex" style="width: 1300px;" >
-      
-      <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        {{#each movie}}
-        <div class="swiper-slide">
-          <div data-aos="zoom-in">
-          <div class="cart">
-            <div class="movie">
-              <img src="{{img}}" alt="" />
-            </div>
-            <div class="movie-info">
-              <h2>{{name}}</h2>
-              <div class="toCard">
-                <span>08.07.2022</span>
-                <p>{{price}}$</p>
-              </div>
-              <button class="buy">BUY</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        {{/each}}
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
   </div>
 
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-     
-    </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+  </script>
