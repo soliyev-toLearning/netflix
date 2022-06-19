@@ -35,7 +35,7 @@ nav {
 .ul {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 600px;
   margin-top: 20px;
 }
 .category {
@@ -43,7 +43,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: end;
-  transform: translateX(-88px);
+  transform: translateX(-148px);
   opacity: 0;
   transition: 0.3s;
 }
