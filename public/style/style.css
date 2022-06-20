@@ -43,19 +43,17 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: end;
-  transform: translateX(-148px);
-  opacity: 0;
-  transition: 0.3s;
+  transform: translateX(-140px);
+  visibility: hidden;
 }
-.category a::after {
+/* .category a::after {
   content: "";
   display: block;
   opacity: 0;
   height: 2px;
   background: red;
   transition: 0.3s;
-}
-
+} */
 /* .clicker:hover .category {
   opacity: 1;
 } */

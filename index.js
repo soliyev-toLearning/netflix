@@ -26,12 +26,14 @@ const addMovie = require("./routers/addMovie");
 const signIn = require("./routers/signIn");
 const signUp = require("./routers/signUp");
 const shoppingCard = require("./routers/shoppingCard");
+const error = require("./routers/errorPage");
 // AppUse Routers
 app.use("/", homePage);
 app.use("/add/movie", addMovie);
 app.use("/signin", signIn);
 app.use("/signup", signUp);
 app.use("/shopping/card", shoppingCard);
+app.use("/error", error);
 
 try {
   const port = normalizePort(process.env.port || 5000);
